@@ -1,0 +1,13 @@
+server:
+  port: 8082
+eureka:
+  client:
+    service-url:
+      defaultZone: http://${register.hostname}:${register.port}/eureka/
+    fetch-registry: true
+    register-with-eureka: true
+  instance:
+    prefer-ip-address: true
+register:
+  hostname: 127.0.0.1
+  port: 8761
