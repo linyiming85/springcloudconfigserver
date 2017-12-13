@@ -28,4 +28,4 @@ register:
 
 unicom:
   server:
-    name:devuserserver
+    name: devuserserver
