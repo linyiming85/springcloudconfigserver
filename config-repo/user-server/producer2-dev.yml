@@ -11,3 +11,6 @@ eureka:
 register:
   hostname: 127.0.0.1
   port: 8761
+spring:
+  zipkin:
+    base-url: http://localhost:9411
