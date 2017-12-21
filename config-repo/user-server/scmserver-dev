@@ -1,0 +1,50 @@
+##################### DB config start #####################
+driver=com.mysql.jdbc.Driver
+url=jdbc:mysql://10.124.128.85:3306/portal?useUnicode=true&characterEncoding=UTF-8
+username=portal
+password=ladder456
+#url=jdbc:mysql://10.124.163.65:3306/portal?useUnicode=true&characterEncoding=UTF-8
+#username=mysql
+#password=portal456
+initialSize=0
+maxActive=20
+maxIdle=20
+minIdle=1
+maxWait=60000
+##################### DB config end #####################
+
+##################### HSF config start #####################
+PM_GROUP_ID=PMSERVICE
+PM_VERSION=0.1
+
+SCM_GROUP_ID=SCMGROUP
+SCM_VERSION=0.3
+
+CI_GROUP_ID=CIGROUP
+CI_VERSION=0.1
+##################### HSF config end #####################
+
+
+##################### ONS config start #####################
+ons.AccessKey=cf9cd19f53454bb9965acc82fb6809b7
+ons.SecretKey=wTIHVGTWjt7sEid0fOGCXYkYoBI=
+ons.native=false
+
+mq.type=ons
+mq.NAMESRV_ADDR=10.124.128.161:9876
+mq.ONSAddr=10.124.128.161:9876
+
+ons.NAMESRV_ADDR=10.124.134.126:9876
+ons.ONSAddr=http://onsaddr-internal.aliyun.com:8080/rocketmq/nsaddr
+#createTestCaseRequire Topic
+CREATE_TEST_CASE_REQUIRE_TOPIC=T_TESTCASE_REQUIRE
+CREATE_TEST_CASE_REQUIRE_PID=PID_TESTCASE_REQUIRE
+CREATE_TEST_CASE_REQUIRE_CID=CID_CREATE_TESTCASE_REQUIRE
+WLM_TEST_CID=CID_WLM_TEST
+
+#createTestCaseResponse Topic
+CREATE_TESTCASE_RESPONSE_TOPIC=T_TESTCASE_RESPONSE
+CREATE_TESTCASE_RESPONSE_PID=PID_TESTCASE_RESPONSE
+CREATE_TESTCASE_RESPONSE_CID=CID_TESTCASE_RESPONSE
+
+##################### ONS config end #####################
